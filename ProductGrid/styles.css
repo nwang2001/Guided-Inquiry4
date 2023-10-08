@@ -1,0 +1,82 @@
+/*tried to be close to the banana republic background color and font style*/
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(246,244,235,255);
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+header h2 {
+    margin-top: 0;
+    font-weight: bolder;
+}
+
+/*removed gaps so it'll be flushed against each product, 4 columns*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding: 0;
+}
+
+/*helps positions the product and product text */
+.product {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+/*positions the text to bottom of product box*/
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*added margins so the text aren't running into the next product*/
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-right: 20px;
+}
+a h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+a h3 {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+a p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
