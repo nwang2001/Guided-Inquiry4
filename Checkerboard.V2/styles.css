@@ -1,0 +1,102 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+/*max width and height includes the padding, margin, and tile width and height*/
+.board {
+    margin: auto;
+    padding: 1px;
+    border: 3px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 832px;
+    max-height: 832px;
+}
+
+/*each tile is made up of a 100px by 100px div*/
+.black-tile {
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.white-tile {
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+/*media queries*/
+/* super tiny screens, probably not needed*/
+@media screen and (max-width: 359px) {
+    h1 {
+        font-size: 20px;
+    }
+    .board {
+        max-width: 250px;
+        max-height: 250px;
+        border: 1px black solid;
+        margin: auto;
+    }
+    .white-tile, .black-tile {
+        margin: 0.5px;
+        width: 30.25px;
+        height: 30.25px;
+    }
+}
+
+/*mobile devices*/
+@media screen and (min-width:360px) and (max-width: 474px) {
+    h1 {
+        font-size: 25px;
+    }
+    .board {
+        max-width: 330px;
+        max-height: 330px;
+        border: 2px black solid;
+        margin: auto;
+    }
+    .white-tile, .black-tile {
+        margin: 1px;
+        width: 39.25px;
+        height: 39.25px;
+    }
+}
+
+/* bigger phones and small tablets*/
+@media screen and (min-width:475px) and (max-width: 614px) {
+    h1 {
+        font-size: 30px;
+    }
+    .board {
+        max-width: 450px;
+        max-height: 450px;
+        border: 2px black solid;
+        margin: auto;
+    }
+    .white-tile, .black-tile {
+        margin: 1px;
+        width: 54.25px;
+        height: 54.25px;
+    }
+}
+
+/*tablets and small laptops*/
+@media screen and (min-width:615px) and (max-width: 859px) {
+    h1 {
+        font-size: 38px;
+    }
+    .board {
+        max-width: 590px;
+        max-height: 590px;
+        border: 2px black solid;
+        margin: auto;
+    }
+    .white-tile, .black-tile {
+        margin: 1px;
+        width: 71.75px;
+        height: 71.75px;
+    }
+}
