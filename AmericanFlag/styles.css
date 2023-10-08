@@ -1,0 +1,30 @@
+/*sets the table height and width proportionate to image*/
+table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    height: 520px;
+    width: 942.85px;
+}
+
+/*keeps image positions top left corner*/
+img {
+    height: 280px;
+    position: absolute;
+}
+
+/*removed the space between rows*/
+td {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+/*used nth child instead of assigning class names*/
+tr:nth-child(odd) {
+    background-color: red;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
